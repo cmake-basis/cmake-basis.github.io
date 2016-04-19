@@ -1,11 +1,11 @@
 <map id="except.h" name="except.h">
-<area shape="rect" id="node2" href="$utilities_8h.html" title="Main module of project&#45;independent BASIS utilities. " alt="" coords="115,80,189,107"/>
-<area shape="rect" id="node7" href="$CmdLine_8cxx.html" title="Manages command line definition and parsing of arguments. " alt="" coords="213,80,312,107"/>
-<area shape="rect" id="node8" href="$os_8cxx.html" title="Operating system dependent functions. " alt="" coords="337,80,397,107"/>
-<area shape="rect" id="node9" href="$path_8cxx.html" title="File/directory path related functions. " alt="" coords="421,80,493,107"/>
-<area shape="rect" id="node10" href="$subprocess_8cxx.html" title="Definition of module used to execute subprocesses. " alt="" coords="518,80,631,107"/>
-<area shape="rect" id="node3" href="$basis_8h.html" title="BASIS utilities of BASIS project of BASIS package. " alt="" coords="71,155,135,181"/>
-<area shape="rect" id="node6" href="$utilities_8cxx.html" title="Main module of project&#45;independent BASIS utilities. " alt="" coords="159,155,246,181"/>
-<area shape="rect" id="node4" href="$testdriver_8h.html" title="Default test driver include file. " alt="" coords="5,229,93,256"/>
-<area shape="rect" id="node5" href="$basis_8cxx.html" title="BASIS utilities of BASIS project of BASIS package. " alt="" coords="117,229,195,256"/>
+<area shape="rect" id="node2" href="$utilities_8h.html" title="Main module of project&#45;independent BASIS utilities. " alt="" coords="113,80,187,107"/>
+<area shape="rect" id="node7" href="$CmdLine_8cxx.html" title="Manages command line definition and parsing of arguments. " alt="" coords="212,80,311,107"/>
+<area shape="rect" id="node8" href="$os_8cxx.html" title="Operating system dependent functions. " alt="" coords="335,80,396,107"/>
+<area shape="rect" id="node9" href="$path_8cxx.html" title="File/directory path related functions. " alt="" coords="420,80,492,107"/>
+<area shape="rect" id="node10" href="$subprocess_8cxx.html" title="Definition of module used to execute subprocesses. " alt="" coords="516,80,631,107"/>
+<area shape="rect" id="node3" href="$basis_8h.html" title="BASIS utilities of BASIS project of BASIS package. " alt="" coords="69,155,133,181"/>
+<area shape="rect" id="node6" href="$utilities_8cxx.html" title="Main module of project&#45;independent BASIS utilities. " alt="" coords="157,155,245,181"/>
+<area shape="rect" id="node4" href="$testdriver_8h.html" title="Default test driver include file. " alt="" coords="5,229,91,256"/>
+<area shape="rect" id="node5" href="$basis_8cxx.html" title="BASIS utilities of BASIS project of BASIS package. " alt="" coords="115,229,193,256"/>
 </map>

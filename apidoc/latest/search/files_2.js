@@ -1,10 +1,8 @@
 var searchData=
 [
   ['bash_2epm',['Bash.pm',['../Bash_8pm.html',1,'']]],
-  ['bashutilities_2edox',['BashUtilities.dox',['../BashUtilities_8dox.html',1,'']]],
   ['basis_2ecxx',['basis.cxx',['../basis_8cxx.html',1,'']]],
   ['basis_2eh',['basis.h',['../basis_8h.html',1,'']]],
-  ['basis_2ephp',['basis.php',['../basis_8php.html',1,'']]],
   ['basis_2epm',['Basis.pm',['../Basis_8pm.html',1,'']]],
   ['basisbootstrapping_2ecmake',['BasisBootstrapping.cmake',['../BasisBootstrapping_8cmake.html',1,'']]],
   ['basisconfig_2ecmake',['BASISConfig.cmake',['../BASISConfig_8cmake.html',1,'']]],

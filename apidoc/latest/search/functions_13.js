@@ -1,7 +1,7 @@
 var searchData=
 [
   ['send_5fsignal',['send_signal',['../classbasis_1_1Subprocess.html#a40b6b9dbdd18f32abbf07b91053c4ae5',1,'basis::Subprocess']]],
-  ['set_5fdefaults',['set_defaults',['../classbasis_1_1argparse_1_1__ActionsContainer.html#aa29b2b2ca6b6adcf858be1631eb441e8',1,'basis::argparse::_ActionsContainer']]],
+  ['set_5fdefaults',['set_defaults',['../classbasis_1_1argparse_1_1__ActionsContainer.html#a05be56fbf7925abadc938d7b53328b5c',1,'basis::argparse::_ActionsContainer']]],
   ['set_5foption',['set_option',['../basistest_8ctest.html#ae052ca453b56c597481b002e54907200',1,'basistest.ctest']]],
   ['set_5ftarget_5fproperties',['set_target_properties',['../group__CMakeUtilities.html#ga0c0bf2c7f157ce0cae858f0574d07f72',1,'ImportTools.cmake']]],
   ['setup',['setup',['../classbasis_1_1CmdLine.html#a8d507ba6d5d103b385699f295e307163',1,'basis::CmdLine']]],
@@ -13,7 +13,7 @@ var searchData=
   ['split',['split',['../classbasis_1_1Subprocess.html#af3edfcdaee2a892b8919fffec3669981',1,'basis::Subprocess::split()'],['../namespacebasis_1_1os_1_1path.html#a1af993de3ca93e9b758423289a500e16',1,'basis::os::path::split(const std::string &amp;path, std::string &amp;head, std::string &amp;tail)'],['../namespacebasis_1_1os_1_1path.html#a0f426e15c24543b5cbe71d14b3781c9c',1,'basis::os::path::split(const std::string &amp;path)']]],
   ['splitdrive',['splitdrive',['../namespacebasis_1_1os_1_1path.html#ac7835468f3c2bd8e23ba2522eb784579',1,'basis::os::path::splitdrive(const std::string &amp;path, std::string &amp;drive, std::string &amp;tail)'],['../namespacebasis_1_1os_1_1path.html#a899819ced807f97f422e08a58b2c8990',1,'basis::os::path::splitdrive(const std::string &amp;path)']]],
   ['splitext',['splitext',['../namespacebasis_1_1os_1_1path.html#a8f856c406335d8ad98cffcc33d3126a2',1,'basis::os::path::splitext(const std::string &amp;path, std::string &amp;head, std::string &amp;ext, const std::set&lt; std::string &gt; *exts=NULL, bool icase=false)'],['../namespacebasis_1_1os_1_1path.html#a283bc9c3493fbf0dc4dbdd2e9f158bec',1,'basis::os::path::splitext(const std::string &amp;path, const std::set&lt; std::string &gt; *exts=NULL)']]],
-  ['start_5fsection',['start_section',['../classbasis_1_1argparse_1_1HelpFormatter.html#a4eed92cee89212e927ee6460c5522d05',1,'basis::argparse::HelpFormatter']]],
+  ['start_5fsection',['start_section',['../classbasis_1_1argparse_1_1HelpFormatter.html#a114e901a42c3011f4ed0ae954c4bd2aa',1,'basis::argparse::HelpFormatter']]],
   ['subprocess',['Subprocess',['../classbasis_1_1Subprocess.html#a8e10f4e66efe803b7efa572cd37dc22b',1,'basis::Subprocess']]],
   ['subprocesserror',['SubprocessError',['../classbasis_1_1util_1_1SubprocessError.html#ab27d91af26b7b851fb68d7b339d14b9e',1,'basis::util::SubprocessError']]]
 ];

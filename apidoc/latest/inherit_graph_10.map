@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node2" href="$classBinaryDiffVisitor.html" title="Visitor used to handle –diff option. " alt="" coords="112,5,229,32"/>
-<area shape="rect" id="node3" href="$classCompareVisitor.html" title="Visitor used to handle –compare option. " alt="" coords="114,56,227,83"/>
+<area shape="rect" id="node3" href="$classCompareVisitor.html" title="Visitor used to handle –compare option. " alt="" coords="115,56,227,83"/>
 <area shape="rect" id="node4" href="$classLineDiffVisitor.html" title="Visitor used to handle –diff&#45;lines option. " alt="" coords="119,107,223,133"/>
 </map>

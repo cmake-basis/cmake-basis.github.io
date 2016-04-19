@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     'v3.2 (4b55e89)',
+        VERSION:     'v3.3 (dd0a896)',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -59,14 +59,14 @@
 <h1>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="source-code">
 <h2>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
-<p>The source code of the CMake BASIS package is hosted on <a class="reference external" href="https://github.com/schuhschuh/cmake-basis/">GitHub</a>
+<p>The source code of the CMake BASIS package is hosted on <a class="reference external" href="https://github.com/cmake-basis/BASIS/">GitHub</a>
 from which all releases and latest development versions can be downloaded. See the <a class="reference internal" href="changelog.html"><em>Release Notes</em></a> for a summary
 of changes in each release.</p>
 <p>Either clone the Git repository:</p>
-<div class="highlight-bash"><div class="highlight"><pre>git clone https://github.com/schuhschuh/cmake-basis.git
+<div class="highlight-bash"><div class="highlight"><pre>git clone --depth<span class="o">=</span>1 https://github.com/cmake-basis/BASIS.git
 </pre></div>
 </div>
-<p>or download the <a class="reference external" href="https://github.com/schuhschuh/cmake-basis/releases">latest BASIS release package</a>.</p>
+<p>or download the <a class="reference external" href="https://github.com/cmake-basis/BASIS/releases">latest BASIS release package</a>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last">The <a class="reference internal" href="quickstart.html"><em>Quick Start Guide</em></a> can help you get up and running.</p>
@@ -74,14 +74,14 @@ of changes in each release.</p>
 <div class="section" id="system-requirements">
 <h3>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h3>
 <p><strong>Operating System:</strong>  Linux, Mac OS X, Microsoft Windows</p>
-<p><strong>Software Packages:</strong> See the <a class="reference internal" href="install.html#basisbuilddependencies"><span>Prerequisites</span></a> for a full list of dependencies.</p>
+<p><strong>Software Packages:</strong> See the <a class="reference internal" href="install.html#basisbuilddependencies"><em>Prerequisites</em></a> for a full list of dependencies.</p>
 </div>
 <div class="section" id="software-license">
 <span id="license"></span><h3>Software License<a class="headerlink" href="#software-license" title="Permalink to this headline">¶</a></h3>
 <p>The CMake BASIS package is distributed under the <a class="reference external" href="http://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a>. A number of source files
 included and used by CMake BASIS originate from other Open Source projects and are thus bound by
 their own respective Open Source license. For a complete list of copyright and license notices,
-have a look at the <a class="reference external" href="https://github.com/schuhschuh/cmake-basis/blob/master/COPYING.txt">COPYING</a> file.</p>
+have a look at the <a class="reference external" href="https://github.com/cmake-basis/BASIS/blob/master/COPYING.txt">COPYING</a> file.</p>
 <p>The original &#8220;BASIS&#8221; package was developed at the
 <a class="reference external" href="http://www.cbica.upenn.edu/sbia/">Section of Biomedical Image Analysis (SBIA)</a> of the
 <a class="reference external" href="http://www.upenn.edu">University of Pennsylvania</a>.
@@ -95,7 +95,7 @@ of CMake BASIS soon after.</p>
 <div class="section" id="package-content">
 <span id="basispackagecontent"></span><h3>Package Content<a class="headerlink" href="#package-content" title="Permalink to this headline">¶</a></h3>
 <p>The following table summarizes the content of the CMake BASIS package briefly with
-links to the <a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master">master branch</a> of the Git repository hosted on GitHub which allows
+links to the <a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master">master branch</a> of the Git repository hosted on GitHub which allows
 browsing through the files online.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -103,44 +103,37 @@ browsing through the files online.</p>
 <col width="75%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/BasisProject.cmake">BasisProject.cmake</a></td>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/BasisProject.cmake">BasisProject.cmake</a></td>
 <td>Meta-data used for the build configuration.</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/CMakeLists.txt">CMakeLists.txt</a></td>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/CMakeLists.txt">CMakeLists.txt</a></td>
 <td>Root CMake configuration file.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/config">config/</a></td>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/config">config/</a></td>
 <td>Package configuration files.</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/data/templates">data/templates/</a></td>
-<td>Project templates.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/doc">doc/</a></td>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/doc">doc/</a></td>
 <td>Documentation source files.</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/example">example/</a></td>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/example">example/</a></td>
 <td>Example files used in the tutorials.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/include">include/</a></td>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/include">include/</a></td>
 <td>Public header files.</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/src/cmake">src/cmake/</a></td>
-<td>CMake implementations and corresponding auxiliary files.</td>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/src/cmake">src/cmake/</a></td>
+<td>CMake modules and corresponding auxiliary files.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/src/geshi">src/geshi/</a></td>
-<td>A language file written in PHP for use with <a class="reference external" href="http://qbnz.com/highlighter/">GeSHi</a>,
-a source code highlighting extension for <a class="reference external" href="http://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a>.</td>
-</tr>
-<tr class="row-even"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/src/sphinx">src/sphinx/</a></td>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/src/sphinx">src/sphinx/</a></td>
 <td>Themes and extensions for the Sphinx documentation tool.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/src/tools">src/tools/</a></td>
-<td>Source code of command-line tools.</td>
-</tr>
-<tr class="row-even"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/src/utilities">src/utilities/</a></td>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/src/utilities">src/utilities/</a></td>
 <td>Source code of utility functions.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://github.com/schuhschuh/cmake-basis/tree/master/test">test/</a></td>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/tools">tools/</a></td>
+<td>Source code of command-line tools and project templates.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/cmake-basis/BASIS/tree/master/test">test/</a></td>
 <td>Unit tests for the provided libraries.</td>
 </tr>
 </tbody>
@@ -149,7 +142,7 @@ a source code highlighting extension for <a class="reference external" href="htt
 </div>
 <div class="section" id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference download internal" href="_downloads/BASIS_Software_Manual.pdf"><code class="xref download docutils literal"><span class="pre">BASIS</span> <span class="pre">Manual</span></code></a>: PDF version of software manual.</p>
+<p><a class="reference download internal" href="_downloads/BASIS_Software_Manual.pdf"><tt class="xref download docutils literal"><span class="pre">BASIS</span> <span class="pre">Manual</span></tt></a>: PDF version of software manual.</p>
 </div>
 </div>
 
@@ -198,22 +191,22 @@ a source code highlighting extension for <a class="reference external" href="htt
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="help.html">Getting Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 </ul>
 
 <h3>External Links</h3>
 <ul>
-  <li><a href="https://github.com/schuhschuh/cmake-basis">Repository</a></ li>
-  <li><a href="https://github.com/schuhschuh/cmake-basis/issues">Issues</a></ li>
+  <li><a href="https://github.com/cmake-basis/BASIS">Repository</a></ li>
+  <li><a href="https://github.com/cmake-basis/BASIS/issues">Issues</a></ li>
 </ul>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
   <div class="footer">
-    &copy; Copyright 2011-12 University of Pennsylvania, 2013-15 Andreas Schuh, 2013-14 Carnegie Mellon University.
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    &copy; Copyright 2011-12 University of Pennsylvania, 2013-14 Carnegie Mellon University, 2013-16 Andreas Schuh.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
   </div>
   
   </body>

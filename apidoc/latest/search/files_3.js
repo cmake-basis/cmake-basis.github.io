@@ -14,7 +14,5 @@ var searchData=
   ['constants_2epm',['Constants.pm',['../Constants_8pm.html',1,'']]],
   ['content_2epm',['Content.pm',['../Content_8pm.html',1,'']]],
   ['core_2esh',['core.sh',['../core_8sh.html',1,'']]],
-  ['ctestconfig_2ecmake',['CTestConfig.cmake',['../CTestConfig_8cmake.html',1,'']]],
-  ['ctestcustom_2ecmake',['CTestCustom.cmake',['../CTestCustom_8cmake.html',1,'']]],
-  ['cxxutilities_2edox',['CxxUtilities.dox',['../CxxUtilities_8dox.html',1,'']]]
+  ['ctestcustom_2ecmake',['CTestCustom.cmake',['../CTestCustom_8cmake.html',1,'']]]
 ];

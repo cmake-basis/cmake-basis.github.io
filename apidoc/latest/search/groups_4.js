@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matlab_20utilities',['MATLAB Utilities',['../group__BasisMatlabUtilities.html',1,'']]]
+  ['non_2dcmake_20utilities',['Non-CMake Utilities',['../group__CMakeHelpers.html',1,'']]]
 ];

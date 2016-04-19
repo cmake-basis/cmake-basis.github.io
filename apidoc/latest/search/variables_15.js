@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['value',['VALUE',['../basistest_8ctest.html#a1cbd5275e581ca98f3eceade4446fed0',1,'basistest.ctest']]],
-  ['variable_5fname',['VARIABLE_NAME',['../CheckPublicHeaders_8cmake.html#aa972b9f2d19b0101d8065dad2b64aab6',1,'VARIABLE_NAME():&#160;CheckPublicHeaders.cmake'],['../ConfigureIncludeFiles_8cmake.html#aa972b9f2d19b0101d8065dad2b64aab6',1,'VARIABLE_NAME():&#160;ConfigureIncludeFiles.cmake']]],
-  ['verbose',['verbose',['../classget__python__lib_1_1easy__install__default.html#a983b920693d99ec624df568f6935b467',1,'get_python_lib::easy_install_default']]],
-  ['verbosity',['verbosity',['../namespaceupdatefile.html#ad53d16ab67ff41096163655ec66c3f32',1,'updatefile']]],
-  ['version',['version',['../classbasis_1_1argparse_1_1__VersionAction.html#a503d56266692568ff1d2910693d45436',1,'basis.argparse._VersionAction.version()'],['../classbasis_1_1argparse_1_1ArgumentParser.html#a77f0f3b65aa0a9c61ff4632219e46465',1,'basis.argparse.ArgumentParser.version()'],['../namespacebasis.html#a22b58fc042103787903aa7d17bb89adb',1,'basis::VERSION()'],['../utilities_8sh.html#a48e98402033e0f924454fedb735cddc5',1,'VERSION():&#160;utilities.sh']]],
-  ['version_5ffile',['VERSION_FILE',['../group__CMakeUtilities.html#ga5ff19dee4e103c4364a395036660a300',1,'GenerateConfig.cmake']]],
-  ['version_5fmajor',['VERSION_MAJOR',['../namespacebasis.html#a4ad55b7774343c01ee3b792cf449cf97',1,'basis']]],
-  ['version_5fminor',['VERSION_MINOR',['../namespacebasis.html#ae511c16f07708d0c3d6a1dc1cd47239b',1,'basis']]],
-  ['version_5fpatch',['VERSION_PATCH',['../namespacebasis.html#aafe990124cf9a87f500894d2a210ead1',1,'basis']]]
+  ['weka_5fdir',['Weka_DIR',['../FindWeka_8cmake.html#a4f82b9ee39b7d67526480f9432bcb97e',1,'FindWeka.cmake']]],
+  ['weka_5fpackages_5fdir',['Weka_PACKAGES_DIR',['../FindWeka_8cmake.html#aee2f57019f0e48d25dd5b62fc1a78188',1,'FindWeka.cmake']]],
+  ['with_5fapidoc',['WITH_APIDOC',['../basistest_8ctest.html#a033963f433f4207da07ce51779549658',1,'basistest.ctest']]],
+  ['with_5fcoverage',['WITH_COVERAGE',['../basistest_8ctest.html#aef4112300dc192ed5c6f3addfaa21865',1,'basistest.ctest']]],
+  ['with_5finstall',['WITH_INSTALL',['../basistest_8ctest.html#ac15998cd89edb77598f33b77d7b2eb03',1,'basistest.ctest']]],
+  ['with_5fmemcheck',['WITH_MEMCHECK',['../basistest_8ctest.html#a0d319be14089ba246ed6bb5f5f9b6737',1,'basistest.ctest']]]
 ];
