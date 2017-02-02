@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     'v3.3 (dd0a896)',
+        VERSION:     'v3.3 (fb18c98)',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -66,7 +66,7 @@ directly and hence do not need to be build (in case of Python, however,
 they are as well compiled by the interpreter itself to improve speed).
 On the other side, CMake provides a mechanism to replace CMake
 variables in a source file by their respective values which are set in the
-<tt class="docutils literal"><span class="pre">CMakeLists.txt</span></tt> files (or an included CMake script file). As it is often
+<code class="docutils literal"><span class="pre">CMakeLists.txt</span></code> files (or an included CMake script file). As it is often
 useful to introduce build specific information in a script file such as
 the relative location of auxiliary executables or data files, the
 <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#gab7b7600c0ab4197db811f810a04670be">basis_add_executable()</a> and <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#ga3a56e2ed99608316be7309fcc090cc66">basis_add_library()</a> commands
@@ -76,11 +76,11 @@ described how the build of scripts can be configured.</p>
 <div class="section" id="prerequisites-and-build-steps">
 <span id="scripttargets"></span><h2>Prerequisites and Build Steps<a class="headerlink" href="#prerequisites-and-build-steps" title="Permalink to this headline">¶</a></h2>
 <p>During the build of a script, the CMake variables as given by
-<tt class="docutils literal"><span class="pre">&#64;VARIABLE_NAME&#64;</span></tt> patterns are replaced by the value of the
+<code class="docutils literal"><span class="pre">&#64;VARIABLE_NAME&#64;</span></code> patterns are replaced by the value of the
 corresponding CMake variable if defined, or by an empty string otherwise.
 Similar to the configuration of source files written in C++ or MATLAB,
 the names of the script files which shall be configured by BASIS during
-the build step have to end with the <tt class="docutils literal"><span class="pre">.in</span></tt> suffix.
+the build step have to end with the <code class="docutils literal"><span class="pre">.in</span></code> suffix.
 Otherwise, the script file is not modified by the BASIS build
 commands and simply copied to the build tree or installation tree,
 respectively. Opposed to configuring the source files already during
@@ -99,20 +99,20 @@ command is called, are dumped to a CMake script file to preserve their value
 at this moment and the dump of the variables is written to a file in the
 build tree. This file is loaded again during the build step by the custom
 build command which eventually configures the script file using CMake&#8217;s
-<a class="reference external" href="http://www.cmake.org/cmake/help/v2.8.8/cmake.html#command:configure_file">configure_file()</a> command with the <tt class="docutils literal"><span class="pre">&#64;ONLY</span></tt> option. This build command
+<a class="reference external" href="http://www.cmake.org/cmake/help/v2.8.8/cmake.html#command:configure_file">configure_file()</a> command with the <code class="docutils literal"><span class="pre">&#64;ONLY</span></code> option. This build command
 configures the script file twice. The first &#8220;built&#8221; script is intended for
 use within the build tree while the second &#8220;built&#8221; script will be copied
 upon installation to the installation tree.</p>
-<p>Before each configuration of the (template) script file (the <tt class="docutils literal"><span class="pre">.in</span></tt>
+<p>Before each configuration of the (template) script file (the <code class="docutils literal"><span class="pre">.in</span></code>
 source file in the source tree), the file with the dumped CMake variable
 values and the various script configuration files are included in the
 following order:</p>
 <ol class="arabic simple">
 <li>Dump file of CMake variables defined when the script target was added.</li>
-<li>Default script configuration file of BASIS (<tt class="docutils literal"><span class="pre">BasisScriptConfig.cmake</span></tt>).</li>
+<li>Default script configuration file of BASIS (<code class="docutils literal"><span class="pre">BasisScriptConfig.cmake</span></code>).</li>
 <li>Default script configuration file of individual project
-(<tt class="docutils literal"><span class="pre">ScriptConfig.cmake</span></tt>, optional).</li>
-<li>Script configuration code specified using the <tt class="docutils literal"><span class="pre">CONFIG</span></tt> argument of the
+(<code class="docutils literal"><span class="pre">ScriptConfig.cmake</span></code>, optional).</li>
+<li>Script configuration code specified using the <code class="docutils literal"><span class="pre">CONFIG</span></code> argument of the
 <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#gab7b7600c0ab4197db811f810a04670be">basis_add_executable()</a> or <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#ga3a56e2ed99608316be7309fcc090cc66">basis_add_library()</a> command.</li>
 </ol>
 </div>
@@ -120,57 +120,57 @@ following order:</p>
 <span id="scriptconfig"></span><h2>Script Configuration<a class="headerlink" href="#script-configuration" title="Permalink to this headline">¶</a></h2>
 <p>The so-called script configuration is CMake code which defines CMake variables
 for use within script files. This code is either saved in a CMake script file
-with the <tt class="docutils literal"><span class="pre">.cmake</span></tt> file name extension or specified directly as argument
-of the <tt class="docutils literal"><span class="pre">CONFIG</span></tt> option of the <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#gab7b7600c0ab4197db811f810a04670be">basis_add_executable()</a> or
+with the <code class="docutils literal"><span class="pre">.cmake</span></code> file name extension or specified directly as argument
+of the <code class="docutils literal"><span class="pre">CONFIG</span></code> option of the <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#gab7b7600c0ab4197db811f810a04670be">basis_add_executable()</a> or
 <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#ga3a56e2ed99608316be7309fcc090cc66">basis_add_library()</a> command used to add a script target to the build
 system. The variables defined by the script configuration are substituted by
 their respective values during the build of the script target. Note that the
 CMake code of the script configuration is evaluated during the build of the
 script target, not during the configuration of the build system. During the
 configuration of the build systems, the script configuration is, however,
-configured in order to replace <tt class="docutils literal"><span class="pre">&#64;VARIABLE_NAME&#64;</span></tt> patterns in the configuration
+configured in order to replace <code class="docutils literal"><span class="pre">&#64;VARIABLE_NAME&#64;</span></code> patterns in the configuration
 by their respective values as defined by the build configuration
-(<tt class="docutils literal"><span class="pre">CMakeLists.txt</span></tt> files). Therefore, the variables defined in the script
+(<code class="docutils literal"><span class="pre">CMakeLists.txt</span></code> files). Therefore, the variables defined in the script
 configuration can be set differently for each of the two builds of the script
 files. If the script configuration is evaluated before the configuration of
 the script file for use inside the build tree, the CMake variable
-<tt class="docutils literal"><span class="pre">BUILD_INSTALL_SCRIPT</span></tt> is set to <tt class="docutils literal"><span class="pre">FALSE</span></tt>. Otherwise, if the script
+<code class="docutils literal"><span class="pre">BUILD_INSTALL_SCRIPT</span></code> is set to <code class="docutils literal"><span class="pre">FALSE</span></code>. Otherwise, if the script
 configuration is evaluated during the build of the script for use in the
-installation tree, this variable is set to <tt class="docutils literal"><span class="pre">TRUE</span></tt> instead. It can therefore
+installation tree, this variable is set to <code class="docutils literal"><span class="pre">TRUE</span></code> instead. It can therefore
 be used to set the variables in the script configuration depending on whether
 or not the script is build for use in the build tree or the installation tree.</p>
 <p>For example, the project structure differs for the build tree and the
 installation tree. Hence, relative file paths to the different directories
 of data files, for instance, have to be set differently depending on the value
-of <tt class="docutils literal"><span class="pre">BUILD_INSTALL_SCRIPT</span></tt>, i.e.,</p>
-<div class="highlight-cmake"><div class="highlight"><pre><span class="nb">if</span> <span class="p">(</span><span class="s">BUILD_INSTALL_SCRIPT</span><span class="p">)</span>
+of <code class="docutils literal"><span class="pre">BUILD_INSTALL_SCRIPT</span></code>, i.e.,</p>
+<div class="highlight-cmake"><div class="highlight"><pre><span></span><span class="nb">if</span> <span class="p">(</span><span class="s">BUILD_INSTALL_SCRIPT</span><span class="p">)</span>
   <span class="nb">set</span> <span class="p">(</span><span class="s">DATA_DIR</span> <span class="s2">&quot;@CMAKE_INSTALL_PREFIX@/@INSTALL_DATA_DIR@&quot;</span><span class="p">)</span>
 <span class="nb">else</span> <span class="p">()</span>
   <span class="nb">set</span> <span class="p">(</span><span class="s">DATA_DIR</span> <span class="s2">&quot;@PROJECT_DATA_DIR@&quot;</span><span class="p">)</span>
 <span class="nb">endif</span> <span class="p">()</span>
 </pre></div>
 </div>
-<p>Avoid the use of absolute paths, however! Instead, use the <tt class="docutils literal"><span class="pre">__DIR__</span></tt> variable
+<p>Avoid the use of absolute paths, however! Instead, use the <code class="docutils literal"><span class="pre">__DIR__</span></code> variable
 which is set in the build script to the directory of the output script file
 to make these paths relative to this directory which contains the configured
 script file. These relative paths which are defined by the script configuration
 are then used in the script file as follows:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="c">#! /usr/bin/env bash</span>
-. <span class="k">${</span><span class="nv">BASIS_BASH_UTILITIES</span><span class="k">}</span> <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&quot;Failed to import BASIS utilities!&quot;</span> 1&gt;&amp;2; <span class="nb">exit </span>1; <span class="o">}</span>
-exedir EXEDIR <span class="o">&amp;&amp;</span> <span class="nb">readonly </span>EXEDIR
-<span class="o">[</span> <span class="nv">$?</span> -eq 0 <span class="o">]</span> <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s1">&#39;Failed to determine directory of this executable!&#39;</span>; <span class="nb">exit </span>1; <span class="o">}</span>
-<span class="nb">readonly </span><span class="nv">DATA_DIR</span><span class="o">=</span><span class="s2">&quot;${EXEDIR}/@DATA_DIR@&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="ch">#! /usr/bin/env bash</span>
+. <span class="si">${</span><span class="nv">BASIS_BASH_UTILITIES</span><span class="si">}</span> <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&quot;Failed to import BASIS utilities!&quot;</span> 1&gt;<span class="p">&amp;</span>2<span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
+exedir EXEDIR <span class="o">&amp;&amp;</span> <span class="nb">readonly</span> EXEDIR
+<span class="o">[</span> <span class="nv">$?</span> -eq <span class="m">0</span> <span class="o">]</span> <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s1">&#39;Failed to determine directory of this executable!&#39;</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
+<span class="nb">readonly</span> <span class="nv">DATA_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">EXEDIR</span><span class="si">}</span><span class="s2">/@DATA_DIR@&quot;</span>
 </pre></div>
 </div>
-<p>where <tt class="docutils literal"><span class="pre">DATA_DIR</span></tt> is the relative path to the required data files as determined
+<p>where <code class="docutils literal"><span class="pre">DATA_DIR</span></code> is the relative path to the required data files as determined
 during the evaluation of the script configuration. See documentation of
 the <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CMakeAPI.html#gaccf81cde4956c3f4607a008bc340a79a">basis_set_script_path()</a> function for a convenience function which
 can be  used therefore. Note that this function is defined in the custom build
 script generated by BASIS for the build of each script target and hence can only be
 used within a script configuration. For example, use this function as follows
-in the <tt class="docutils literal"><span class="pre">PROJECT_CONFIG_DIR/ScriptConfig.cmake.in</span></tt> script configuration
+in the <code class="docutils literal"><span class="pre">PROJECT_CONFIG_DIR/ScriptConfig.cmake.in</span></code> script configuration
 file of your project:</p>
-<div class="highlight-cmake"><div class="highlight"><pre><span class="nb">basis_set_script_path</span><span class="p">(</span><span class="s">DATA_DIR</span> <span class="s2">&quot;@PROJECT_DATA_DIR@&quot;</span> <span class="s2">&quot;@INSTALL_DATA_DIR@&quot;</span><span class="p">)</span>
+<div class="highlight-cmake"><div class="highlight"><pre><span></span><span class="nb">basis_set_script_path</span><span class="p">(</span><span class="s">DATA_DIR</span> <span class="s2">&quot;@PROJECT_DATA_DIR@&quot;</span> <span class="s2">&quot;@INSTALL_DATA_DIR@&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Note that most of the more common variables which are useful for the development
@@ -211,7 +211,7 @@ list of available variables.</p>
 <li class="toctree-l2"><a class="reference internal" href="fhs.html">Filesystem Layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="template.html">Project Template</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules.html">Project Modularization</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Build of Script Targets</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Build of Script Targets</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#prerequisites-and-build-steps">Prerequisites and Build Steps</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#script-configuration">Script Configuration</a></li>
 </ul>
@@ -243,7 +243,7 @@ list of available variables.</p>
     </div>
   <div class="footer">
     &copy; Copyright 2011-12 University of Pennsylvania, 2013-14 Carnegie Mellon University, 2013-16 Andreas Schuh.
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
   </div>
   
   </body>

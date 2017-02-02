@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_5f_5fall_5f_5f',['__all__',['../namespacebasis.html#ad802191cfc1ffec145e27d7abed6ad58',1,'basis.__all__()'],['../namespacebasis_1_1argparse.html#af54caf5a3b217883539ee58351176ca5',1,'basis.argparse.__all__()'],['../namespacebasis_1_1utilities.html#af739e2acf074785a05d501759ea8c5d6',1,'basis.utilities.__all__()'],['../namespacebasis_1_1which.html#a9f765a725f67fd610dbd8fc471ecb21b',1,'basis.which.__all__()']]],
   ['_5f_5fbasis_5fcommontools_5fincluded',['__BASIS_COMMONTOOLS_INCLUDED',['../CommonTools_8cmake.html#a3ca1a6377f9d79b60b081446e8c4e5f8',1,'CommonTools.cmake']]],
   ['_5f_5fbasis_5fdoctools_5fincluded',['__BASIS_DOCTOOLS_INCLUDED',['../DocTools_8cmake.html#a7b3d2f041a6dc48fcbf246015d222ddd',1,'DocTools.cmake']]],
   ['_5f_5fbasis_5fexportimporttools_5fincluded',['__BASIS_EXPORTIMPORTTOOLS_INCLUDED',['../ExportTools_8cmake.html#a7187327650e3db3a7432c48b764370b7',1,'ExportTools.cmake']]],
@@ -15,14 +14,9 @@ var searchData=
   ['_5f_5fbasis_5fsuper_5fbuild_5fincluded',['__BASIS_SUPER_BUILD_INCLUDED',['../SuperBuildTools_8cmake.html#a6fc4aae0d1e895e106c7157a4a06a35d',1,'SuperBuildTools.cmake']]],
   ['_5f_5fbasis_5ftargettools_5fincluded',['__BASIS_TARGETTOOLS_INCLUDED',['../TargetTools_8cmake.html#a7adf95e40fc87da4ca0b065a50784866',1,'TargetTools.cmake']]],
   ['_5f_5fbasis_5ftools_5fincluded',['__BASIS_TOOLS_INCLUDED',['../BasisTools_8cmake.html#adbcacda9dde3ee7a5f1c3f2d74ede715',1,'BasisTools.cmake']]],
-  ['_5f_5fcvlib',['__CVLIB',['../FindOpenCV_8cmake.html#a27bb7a7a68de025eedf46911dfeef650',1,'FindOpenCV.cmake']]],
   ['_5f_5fdir_5f_5f',['__DIR__',['../group__BasisScriptConfig.html#ga100bdc822be0db9550c2118576693562',1,'BasisScriptConfig.cmake']]],
-  ['_5f_5fexternal_5flib_5f_5f',['__external_lib__',['../namespacebasis_1_1argparse.html#a781633fb4cf8720610e8e421c006d4c2',1,'basis::argparse']]],
   ['_5f_5ffile_5f_5f',['__FILE__',['../group__BasisScriptConfig.html#ga2cf035559045e417fecc45d388414049',1,'BasisScriptConfig.cmake']]],
   ['_5f_5fname_5f_5f',['__NAME__',['../group__BasisScriptConfig.html#ga4e1bc6dfa8d9c73ef9e10067722b4483',1,'BasisScriptConfig.cmake']]],
-  ['_5f_5frevision_5f_5f',['__revision__',['../namespacebasis_1_1which.html#a9e60497b0fbb478e741f2e7932cf4738',1,'basis::which']]],
-  ['_5f_5fversion_5f_5f',['__version__',['../namespacebasis_1_1argparse.html#abbfc12cf2475e59e30efee3a17838b8d',1,'basis.argparse.__version__()'],['../namespacebasis_1_1which.html#a8b45f7d1944b2d67905871dd62894d8d',1,'basis.which.__version__()']]],
-  ['_5f_5fversion_5finfo_5f_5f',['__version_info__',['../namespacebasis_1_1which.html#a9d7264c8b2189ca35e9718aa75dad84a',1,'basis::which']]],
   ['_5facml_5fcompiler32',['_ACML_COMPILER32',['../FindBLAS_8cmake.html#a019d7b066477a3a178c1e8f8da20a571',1,'FindBLAS.cmake']]],
   ['_5facml_5fcompiler64',['_ACML_COMPILER64',['../FindBLAS_8cmake.html#a6d937877a24fc89db7ff0dfd4282826b',1,'FindBLAS.cmake']]],
   ['_5facml_5fpath_5fsuffix',['_ACML_PATH_SUFFIX',['../FindBLAS_8cmake.html#a27fc646239b0e10de73bc5c07bde2e32',1,'FindBLAS.cmake']]],
@@ -33,7 +27,6 @@ var searchData=
   ['_5fbundle',['_BUNDLE',['../DirectoriesSettings_8cmake.html#a040076c2c296944e601cd29f9393c44b',1,'DirectoriesSettings.cmake']]],
   ['_5fcache',['_cache',['../FindMIRTK_8cmake.html#a0cefafda9ccb46f4826399037990c584',1,'FindMIRTK.cmake']]],
   ['_5fcheck_5ffortran',['_CHECK_FORTRAN',['../FindBLAS_8cmake.html#abb314b81963129a5ab9e92e8f1a4dad3',1,'FindBLAS.cmake']]],
-  ['_5fcmdlnusage',['_cmdlnUsage',['../namespacebasis_1_1which.html#ae9c79d0a92e1306ba1830cefb3388fa5',1,'basis::which']]],
   ['_5fcontact',['_contact',['../classbasis_1_1CmdLine.html#a272462c79dde125266c661e4f9f6eaf5',1,'basis::CmdLine']]],
   ['_5fcopyright',['_copyright',['../classbasis_1_1CmdLine.html#a0c4c313631dae6f2a312d2618d696a95',1,'basis::CmdLine']]],
   ['_5fexamples',['_examples',['../classbasis_1_1CmdLine.html#a0eed8b9207fb42bd3b07957afc186a5a',1,'basis::CmdLine']]],
@@ -57,7 +50,6 @@ var searchData=
   ['_5fmatlab_5foptional_5flibrary_5fnames',['_MATLAB_OPTIONAL_LIBRARY_NAMES',['../FindMATLAB_8cmake.html#a6f35348443b9b67e71485741afddaee5',1,'FindMATLAB.cmake']]],
   ['_5fmirtk_5fdir',['_MIRTK_DIR',['../FindMIRTK_8cmake.html#ac7a104a10c5b9efa38c2b986871553f4',1,'FindMIRTK.cmake']]],
   ['_5fmodule',['_MODULE',['../DirectoriesSettings_8cmake.html#a20d949e1ab10e00f897776ce690b167a',1,'DirectoriesSettings.cmake']]],
-  ['_5fmodule_5fdir',['_MODULE_DIR',['../namespacebasis_1_1utilities.html#abf7758902507a7dda4078c34ed916186',1,'basis::utilities']]],
   ['_5fmodule_5fname',['_MODULE_NAME',['../group__BasisConfig.html#ga6b0cb25b5bb327e1c4221e399e83c043',1,'BASISConfig.cmake']]],
   ['_5fmodule_5fns',['_MODULE_NS',['../group__BasisConfig.html#ga44fc37ac7a7156e7ee16ebcecf5b20f6',1,'BASISConfig.cmake']]],
   ['_5fmosek6_5fversions',['_MOSEK6_VERSIONS',['../FindMOSEK_8cmake.html#ac1d1583b03f44ee6eed1864ca99157d8',1,'FindMOSEK.cmake']]],
@@ -103,7 +95,6 @@ var searchData=
   ['_5ftbb_5ftbb_5flib_5fnames_5fdebug',['_TBB_TBB_LIB_NAMES_DEBUG',['../FindTBB_8cmake.html#ae1d62f93dc93b53a894284c4a9bc791c',1,'FindTBB.cmake']]],
   ['_5ftbb_5ftbb_5flib_5fnames_5frelease',['_TBB_TBB_LIB_NAMES_RELEASE',['../FindTBB_8cmake.html#aadea620ce07a8d9774d246eda3ea74f6',1,'FindTBB.cmake']]],
   ['_5ftypedesc',['_typeDesc',['../classbasis_1_1NegativeValueConstraint.html#a2738093d158c371b9924d83e44a7f5e3',1,'basis::NegativeValueConstraint::_typeDesc()'],['../classbasis_1_1ZeroOrNegativeValueConstraint.html#acacc1677748e3722864d8d8acec898d7',1,'basis::ZeroOrNegativeValueConstraint::_typeDesc()'],['../classbasis_1_1NonZeroValueConstraint.html#a1c503ce316d84b72d2a547b7e07aaf97',1,'basis::NonZeroValueConstraint::_typeDesc()'],['../classbasis_1_1PositiveValueConstraint.html#a2699d04731fa6226ce9fa29804e7b392',1,'basis::PositiveValueConstraint::_typeDesc()'],['../classbasis_1_1ZeroOrPositiveValueConstraint.html#ad6c6053340ff4ac5381cd23e25de5e15',1,'basis::ZeroOrPositiveValueConstraint::_typeDesc()'],['../classbasis_1_1ExistingFileConstraint.html#ac968fcdf904fce949cd7ce1be23f2f76',1,'basis::ExistingFileConstraint::_typeDesc()'],['../classbasis_1_1ExistingDirectoryConstraint.html#a6666823daaf71ea3198d9fbe19a93d19',1,'basis::ExistingDirectoryConstraint::_typeDesc()']]],
-  ['_5funrecognized_5fargs_5fattr',['_UNRECOGNIZED_ARGS_ATTR',['../namespacebasis_1_1argparse.html#aecc985bea748252b2c039d9ea74d2dae',1,'basis::argparse']]],
   ['_5fvendor',['_VENDOR',['../DirectoriesSettings_8cmake.html#a841161d34cb16303b3e6887c931d84ca',1,'DirectoriesSettings.cmake']]],
   ['_5fxorhandler',['_xorHandler',['../classbasis_1_1CmdLine.html#ad65dbc5eb3731c6a1f61e23f9dca1170',1,'basis::CmdLine']]]
 ];

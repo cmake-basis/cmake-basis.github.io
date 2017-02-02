@@ -1,5 +1,5 @@
 <map id="basis::CmdLine" name="basis::CmdLine">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="195,149,273,227"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="171,6,297,98"/>
-<area shape="rect" id="node5" href="$classbasis_1_1CmdLine_1_1XorHandler.html" title="Handles lists of Arg&#39;s that are to be XOR&#39;d on the command&#45;line. " alt="" coords="463,291,649,383"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="192,155,271,237"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="169,6,295,103"/>
+<area shape="rect" id="node8" href="$classbasis_1_1CmdLine_1_1XorHandler.html" title="Handles lists of Arg&#39;s that are to be XOR&#39;d on the command&#45;line. " alt="" coords="458,302,645,399"/>
 </map>

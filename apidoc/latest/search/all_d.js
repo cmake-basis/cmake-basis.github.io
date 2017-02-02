@@ -1,7 +1,7 @@
 var searchData=
 [
   ['macos',['MACOS',['../group__BasisCxxUtilities.html#ga36e7f351cb9fd5afc2f9984e0eec5a65',1,'config.h']]],
-  ['main',['main',['../namespacebasis_1_1which.html#a047dca5c1eeed2cc908636ff3bb82389',1,'basis::which']]],
+  ['main',['main',['../namespacebasis_1_1which.html#a460512d25796f86112243a27553deae3',1,'basis::which']]],
   ['makedirs',['makedirs',['../namespacebasis_1_1os.html#a43dc5cbd08bf547b13cc4a31f33380bd',1,'basis::os']]],
   ['manual_5fmode',['MANUAL_MODE',['../basistest_8ctest.html#ae2d280ddfd055ea661709213b38fbba2',1,'basistest.ctest']]],
   ['match',['match',['../group__BasisBashUtilities.html#ga71ce2ad25b08bc60c2a98e577b5f6abd',1,'core.sh']]],
@@ -21,9 +21,9 @@ var searchData=
   ['matlabniftitools_5fincludes',['MatlabNiftiTools_INCLUDES',['../FindMatlabNiftiTools_8cmake.html#a9fa076f9f0106bfbc83532f51b522098',1,'FindMatlabNiftiTools.cmake']]],
   ['matlabpath_5fconfig',['MATLABPATH_CONFIG',['../BasisConfigSettings_8cmake.html#a21400e1fb00920b90c1c0bc9f9146568',1,'BasisConfigSettings.cmake']]],
   ['matlabtools_2ecmake',['MatlabTools.cmake',['../MatlabTools_8cmake.html',1,'']]],
-  ['max_5fnumber_5fof_5fdifferences',['max_number_of_differences',['../structRegressionTest.html#ad91b2c56433c662b11568067275cdab7',1,'RegressionTest::max_number_of_differences()'],['../testdriver_8h.html#a756730273bb3dc0c7e2a1e171604483b',1,'max_number_of_differences():&#160;testdriver.h']]],
-  ['max_5fnumber_5fof_5fthreads',['max_number_of_threads',['../testdriver_8h.html#a3ba777638af7711455f877d228928fab',1,'testdriver.h']]],
-  ['merge',['merge',['../namespacebasis_1_1diff3.html#a6530aa9ae192c6b0aace21127205e0d8',1,'basis::diff3']]],
+  ['max_5fnumber_5fof_5fdifferences',['max_number_of_differences',['../structRegressionTest.html#ad91b2c56433c662b11568067275cdab7',1,'RegressionTest::max_number_of_differences()'],['../testdriver_8h.html#a2956bc1c1fa3abf88d0d518eb7453e64',1,'max_number_of_differences():&#160;testdriver.h']]],
+  ['max_5fnumber_5fof_5fthreads',['max_number_of_threads',['../testdriver_8h.html#a6bf0d9bab3d6bba4f1cd413aa918d128',1,'testdriver.h']]],
+  ['merge',['merge',['../namespacebasis_1_1diff3.html#a40c63bcc0154174f52c7a610b56d649d',1,'basis::diff3']]],
   ['message',['message',['../classbasis_1_1argparse_1_1ArgumentError.html#a3944042a407b344996e5d1400d98e8dc',1,'basis::argparse::ArgumentError']]],
   ['metavar',['metavar',['../classbasis_1_1argparse_1_1Action.html#ae299330271de6414fa465845f2a6975f',1,'basis::argparse::Action']]],
   ['method',['method',['../structRegressionTest.html#a6ddf111c8cd9b0b38b4a9280481814f2',1,'RegressionTest']]],

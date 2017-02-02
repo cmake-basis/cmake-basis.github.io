@@ -1,6 +1,6 @@
 <map id="basis.argparse._StoreConstAction" name="basis.argparse._StoreConstAction">
-<area shape="rect" id="node5" href="$classbasis_1_1argparse_1_1__StoreFalseAction.html" title="{basis.argparse._StoreFalse\lAction\n||+ __init__()\l}" alt="" coords="5,699,187,791"/>
-<area shape="rect" id="node6" href="$classbasis_1_1argparse_1_1__StoreTrueAction.html" title="{basis.argparse._StoreTrue\lAction\n||+ __init__()\l}" alt="" coords="211,699,385,791"/>
-<area shape="rect" id="node2" href="$classbasis_1_1argparse_1_1Action.html" title="{basis.argparse.Action\n|+ choices\l+ const\l+ default\l+ dest\l+ help\l+ metavar\l+ nargs\l+ option_strings\l+ required\l+ type\l|+ __call__()\l+ __init__()\l}" alt="" coords="123,272,271,496"/>
-<area shape="rect" id="node3" href="$classbasis_1_1argparse_1_1__AttributeHolder.html" title="{basis.argparse._Attribute\lHolder\n||+ __repr__()\l}" alt="" coords="114,131,280,223"/>
+<area shape="rect" id="node9" href="$classbasis_1_1argparse_1_1__StoreFalseAction.html" title="{basis.argparse._StoreFalse\lAction\n||+ __init__()\l}" alt="" coords="5,737,189,834"/>
+<area shape="rect" id="node11" href="$classbasis_1_1argparse_1_1__StoreTrueAction.html" title="{basis.argparse._StoreTrue\lAction\n||+ __init__()\l}" alt="" coords="213,737,392,834"/>
+<area shape="rect" id="node2" href="$classbasis_1_1argparse_1_1Action.html" title="{basis.argparse.Action\n|+ choices\l+ const\l+ default\l+ dest\l+ help\l+ metavar\l+ nargs\l+ option_strings\l+ required\l+ type\l|+ __call__()\l+ __init__()\l}" alt="" coords="125,283,275,525"/>
+<area shape="rect" id="node4" href="$classbasis_1_1argparse_1_1__AttributeHolder.html" title="{basis.argparse._Attribute\lHolder\n||+ __repr__()\l}" alt="" coords="115,137,284,234"/>
 </map>

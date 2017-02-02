@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     'v3.3 (dd0a896)',
+        VERSION:     'v3.3 (fb18c98)',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -64,19 +64,19 @@
 <span id="generatesourcepackage"></span><h2>Distribution of Sources<a class="headerlink" href="#distribution-of-sources" title="Permalink to this headline">¶</a></h2>
 <p>A source package for distribution which only includes basic tests and
 selected modules can be generated using <a class="reference external" href="http://www.cmake.org/cmake/help/cpack-2-8-docs.html">CPack</a>. In particular, the build target
-<tt class="docutils literal"><span class="pre">package_source</span></tt> is used to generate a <tt class="docutils literal"><span class="pre">.tar.gz</span></tt> file with the source
+<code class="docutils literal"><span class="pre">package_source</span></code> is used to generate a <code class="docutils literal"><span class="pre">.tar.gz</span></code> file with the source
 files of the distribution package. This package will include all source
 files except those which match one of the patterns in the
-<tt class="docutils literal"><span class="pre">CPACK_SOURCE_IGNORE_FILES</span></tt> CMake list which is set to common default
+<code class="docutils literal"><span class="pre">CPACK_SOURCE_IGNORE_FILES</span></code> CMake list which is set to common default
 patterns in the <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/BasisPack_8cmake.html">BasisPack.cmake</a> module. Additional exclude patterns for
-a particular package shall be added to the <tt class="docutils literal"><span class="pre">Settings.cmake</span></tt> file of the
+a particular package shall be added to the <code class="docutils literal"><span class="pre">Settings.cmake</span></code> file of the
 project. Moreover, if the project contains different
-<a class="reference internal" href="../standard/modules.html"><em>modules</em></a>, only the enabled modules are included.
+<a class="reference internal" href="../standard/modules.html"><span class="doc">modules</span></a>, only the enabled modules are included.
 For general steps on how to configure a build tree, see the
-<a class="reference internal" href="install.html#howtobuildthesoftware"><em>common build instructions</em></a>. Given a configured build
-tree with a generated <tt class="docutils literal"><span class="pre">Makefile</span></tt>, run the following command to generate the source
+<a class="reference internal" href="install.html#howtobuildthesoftware"><span class="std std-ref">common build instructions</span></a>. Given a configured build
+tree with a generated <code class="docutils literal"><span class="pre">Makefile</span></code>, run the following command to generate the source
 distribution package:</p>
-<div class="highlight-python"><div class="highlight"><pre>make package_source
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">package_source</span>
 </pre></div>
 </div>
 </div>
@@ -116,7 +116,7 @@ distribution package:</p>
 <li class="toctree-l2"><a class="reference internal" href="manage-data.html">Managing Test Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="document.html">Documenting Software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="branch-and-release.html">Branch and Release</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Packaging Software</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Packaging Software</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#distribution-of-sources">Distribution of Sources</a></li>
 </ul>
 </li>
@@ -148,7 +148,7 @@ distribution package:</p>
     </div>
   <div class="footer">
     &copy; Copyright 2011-12 University of Pennsylvania, 2013-14 Carnegie Mellon University, 2013-16 Andreas Schuh.
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
   </div>
   
   </body>

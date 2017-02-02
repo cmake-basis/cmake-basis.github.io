@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     'v3.3 (dd0a896)',
+        VERSION:     'v3.3 (fb18c98)',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -69,26 +69,26 @@ command-line argument classes. The API documentation of the TCLAP classes can
 also be found as part of this documentation.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">BASIS provides its own subclass of the <tt class="docutils literal"><span class="pre">TCLAP::CmdLine</span></tt> class
-which is also named <tt class="docutils literal"><span class="pre">CmdLine</span></tt>, but in the <tt class="docutils literal"><span class="pre">basis</span></tt> namespace, i.e.,
-<tt class="docutils literal"><span class="pre">basis::CmdLine</span></tt>. Most of the argument implementations are, however,
-simply typedefs of the commonly used <tt class="docutils literal"><span class="pre">TCLAP::Arg</span></tt> subclasses.
+<p class="last">BASIS provides its own subclass of the <code class="docutils literal"><span class="pre">TCLAP::CmdLine</span></code> class
+which is also named <code class="docutils literal"><span class="pre">CmdLine</span></code>, but in the <code class="docutils literal"><span class="pre">basis</span></code> namespace, i.e.,
+<code class="docutils literal"><span class="pre">basis::CmdLine</span></code>. Most of the argument implementations are, however,
+simply typedefs of the commonly used <code class="docutils literal"><span class="pre">TCLAP::Arg</span></code> subclasses.
 See the <a class="reference external" href="https://cmake-basis.github.io/apidoc/latest/group__CxxCmdLine.html">API documentation</a>
 for a list of command-line arguments which are made available as part of
-the <tt class="docutils literal"><span class="pre">basis</span></tt> namespace.</p>
+the <code class="docutils literal"><span class="pre">basis</span></code> namespace.</p>
 </div>
 <p>The usage of the command-line parsing library shall be demonstrated in the
 following on the implementation of an example command-line program. It should
-be noted that the try-catch block in the <tt class="docutils literal"><span class="pre">main()</span></tt> function will only help to
-track errors in the command-line specification, but once the <tt class="docutils literal"><span class="pre">cmd</span></tt> instance
+be noted that the try-catch block in the <code class="docutils literal"><span class="pre">main()</span></code> function will only help to
+track errors in the command-line specification, but once the <code class="docutils literal"><span class="pre">cmd</span></code> instance
 is initialized properly, all runtime exceptions related to the parsing of
 the command-line are handled by BASIS.</p>
-<div class="highlight-c++"><div class="highlight"><pre><span class="cm">/**</span>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm"> * @file  smoothimage.cxx</span>
 <span class="cm"> * @breif Smooth image using Gaussian or anisotropic diffusion filtering.</span>
 <span class="cm"> */</span>
 
-<span class="cp">#include &lt;package/basis.h&gt; </span><span class="c1">// include BASIS C++ utilities</span>
+<span class="cp">#include</span> <span class="cpf">&lt;package/basis.h&gt; // include BASIS C++ utilities</span><span class="cp"></span>
 
 
 <span class="c1">// acceptable in .cxx file</span>
@@ -161,7 +161,7 @@ the command-line are handled by BASIS.</p>
 
     <span class="c1">// -----------------------------------------------------------------------</span>
     <span class="c1">// parse command-line</span>
-    <span class="n">try</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
         <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">examples</span><span class="p">;</span>
 
         <span class="n">examples</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span>
@@ -214,74 +214,74 @@ the command-line are handled by BASIS.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Running the above program with the <tt class="docutils literal"><span class="pre">--help</span></tt> option will give the output:</p>
-<div class="highlight-python"><div class="highlight"><pre>SYNOPSIS
-    smoothimage [--std &lt;float&gt;] [--radius &lt;rx&gt; &lt;ry&gt; &lt;rz&gt;] [--verbose|-v]
-                {--gaussian|--anisotropic} &lt;image&gt;
-    smoothimage [--help|-h|--helpshort|--helpxml|--helpman|--version]
+<p>Running the above program with the <code class="docutils literal"><span class="pre">--help</span></code> option will give the output:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SYNOPSIS</span>
+    <span class="n">smoothimage</span> <span class="p">[</span><span class="o">--</span><span class="n">std</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">radius</span> <span class="o">&lt;</span><span class="n">rx</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">ry</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">rz</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">verbose</span><span class="o">|-</span><span class="n">v</span><span class="p">]</span>
+                <span class="p">{</span><span class="o">--</span><span class="n">gaussian</span><span class="o">|--</span><span class="n">anisotropic</span><span class="p">}</span> <span class="o">&lt;</span><span class="n">image</span><span class="o">&gt;</span>
+    <span class="n">smoothimage</span> <span class="p">[</span><span class="o">--</span><span class="n">help</span><span class="o">|-</span><span class="n">h</span><span class="o">|--</span><span class="n">helpshort</span><span class="o">|--</span><span class="n">helpxml</span><span class="o">|--</span><span class="n">helpman</span><span class="o">|--</span><span class="n">version</span><span class="p">]</span>
 
-DESCRIPTION
-    This program smooths an input image using either a Gaussian filter or
-    an anisotropic diffusion filter.
+<span class="n">DESCRIPTION</span>
+    <span class="n">This</span> <span class="n">program</span> <span class="n">smooths</span> <span class="n">an</span> <span class="nb">input</span> <span class="n">image</span> <span class="n">using</span> <span class="n">either</span> <span class="n">a</span> <span class="n">Gaussian</span> <span class="nb">filter</span> <span class="ow">or</span>
+    <span class="n">an</span> <span class="n">anisotropic</span> <span class="n">diffusion</span> <span class="nb">filter</span><span class="o">.</span>
 
-OPTIONS
-    Required arguments:
-       -g or --gaussian
-            Smooth image using a Gaussian filter.
-       or -a or --anisotropic
-            Smooth image using anisotropic diffusion filter.
+<span class="n">OPTIONS</span>
+    <span class="n">Required</span> <span class="n">arguments</span><span class="p">:</span>
+       <span class="o">-</span><span class="n">g</span> <span class="ow">or</span> <span class="o">--</span><span class="n">gaussian</span>
+            <span class="n">Smooth</span> <span class="n">image</span> <span class="n">using</span> <span class="n">a</span> <span class="n">Gaussian</span> <span class="nb">filter</span><span class="o">.</span>
+       <span class="ow">or</span> <span class="o">-</span><span class="n">a</span> <span class="ow">or</span> <span class="o">--</span><span class="n">anisotropic</span>
+            <span class="n">Smooth</span> <span class="n">image</span> <span class="n">using</span> <span class="n">anisotropic</span> <span class="n">diffusion</span> <span class="nb">filter</span><span class="o">.</span>
 
-       &lt;image&gt;
-            Image to be smoothed.
+       <span class="o">&lt;</span><span class="n">image</span><span class="o">&gt;</span>
+            <span class="n">Image</span> <span class="n">to</span> <span class="n">be</span> <span class="n">smoothed</span><span class="o">.</span>
 
-    Optional arguments:
-       -s or --std &lt;float&gt;
-            Standard deviation of Gaussian in voxel units.
+    <span class="n">Optional</span> <span class="n">arguments</span><span class="p">:</span>
+       <span class="o">-</span><span class="n">s</span> <span class="ow">or</span> <span class="o">--</span><span class="n">std</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
+            <span class="n">Standard</span> <span class="n">deviation</span> <span class="n">of</span> <span class="n">Gaussian</span> <span class="ow">in</span> <span class="n">voxel</span> <span class="n">units</span><span class="o">.</span>
 
-       -r or --radius &lt;rx&gt; &lt;ry&gt; &lt;rz&gt;
-            Radius of Gaussian kernel in each dimension.
+       <span class="o">-</span><span class="n">r</span> <span class="ow">or</span> <span class="o">--</span><span class="n">radius</span> <span class="o">&lt;</span><span class="n">rx</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">ry</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">rz</span><span class="o">&gt;</span>
+            <span class="n">Radius</span> <span class="n">of</span> <span class="n">Gaussian</span> <span class="n">kernel</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">dimension</span><span class="o">.</span>
 
-    Standard arguments:
-       -- or --ignore_rest
-            Ignores the rest of the labeled arguments following this flag.
+    <span class="n">Standard</span> <span class="n">arguments</span><span class="p">:</span>
+       <span class="o">--</span> <span class="ow">or</span> <span class="o">--</span><span class="n">ignore_rest</span>
+            <span class="n">Ignores</span> <span class="n">the</span> <span class="n">rest</span> <span class="n">of</span> <span class="n">the</span> <span class="n">labeled</span> <span class="n">arguments</span> <span class="n">following</span> <span class="n">this</span> <span class="n">flag</span><span class="o">.</span>
 
-       -v or --verbose
-            Increase verbosity of output messages.
+       <span class="o">-</span><span class="n">v</span> <span class="ow">or</span> <span class="o">--</span><span class="n">verbose</span>
+            <span class="n">Increase</span> <span class="n">verbosity</span> <span class="n">of</span> <span class="n">output</span> <span class="n">messages</span><span class="o">.</span>
 
-       -h or --help
-            Display help and exit.
+       <span class="o">-</span><span class="n">h</span> <span class="ow">or</span> <span class="o">--</span><span class="n">help</span>
+            <span class="n">Display</span> <span class="n">help</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
 
-       --helpshort
-            Display short help and exit.
+       <span class="o">--</span><span class="n">helpshort</span>
+            <span class="n">Display</span> <span class="n">short</span> <span class="n">help</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
 
-       --helpxml
-            Display help in XML format and exit.
+       <span class="o">--</span><span class="n">helpxml</span>
+            <span class="n">Display</span> <span class="n">help</span> <span class="ow">in</span> <span class="n">XML</span> <span class="nb">format</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
 
-       --helpman
-            Display help as man page and exit.
+       <span class="o">--</span><span class="n">helpman</span>
+            <span class="n">Display</span> <span class="n">help</span> <span class="k">as</span> <span class="n">man</span> <span class="n">page</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
 
-       --version
-            Display version information and exit.
+       <span class="o">--</span><span class="n">version</span>
+            <span class="n">Display</span> <span class="n">version</span> <span class="n">information</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
 
-EXAMPLE
-    smoothimage --gaussian --std 3.5 --radius 5 5 3 brain.nii
+<span class="n">EXAMPLE</span>
+    <span class="n">smoothimage</span> <span class="o">--</span><span class="n">gaussian</span> <span class="o">--</span><span class="n">std</span> <span class="mf">3.5</span> <span class="o">--</span><span class="n">radius</span> <span class="mi">5</span> <span class="mi">5</span> <span class="mi">3</span> <span class="n">brain</span><span class="o">.</span><span class="n">nii</span>
 
-        Smooths the image brain.nii using a Gaussian with standard
-        deviation 3.5 voxel units and 5 voxels in-slice radius and 3 voxels
-        radius across slices.
+        <span class="n">Smooths</span> <span class="n">the</span> <span class="n">image</span> <span class="n">brain</span><span class="o">.</span><span class="n">nii</span> <span class="n">using</span> <span class="n">a</span> <span class="n">Gaussian</span> <span class="k">with</span> <span class="n">standard</span>
+        <span class="n">deviation</span> <span class="mf">3.5</span> <span class="n">voxel</span> <span class="n">units</span> <span class="ow">and</span> <span class="mi">5</span> <span class="n">voxels</span> <span class="ow">in</span><span class="o">-</span><span class="nb">slice</span> <span class="n">radius</span> <span class="ow">and</span> <span class="mi">3</span> <span class="n">voxels</span>
+        <span class="n">radius</span> <span class="n">across</span> <span class="n">slices</span><span class="o">.</span>
 
-    smoothimage --anisotropic brain.nii
+    <span class="n">smoothimage</span> <span class="o">--</span><span class="n">anisotropic</span> <span class="n">brain</span><span class="o">.</span><span class="n">nii</span>
 
-        Smooths the image brain.nii using an anisotropic diffusion filter.
+        <span class="n">Smooths</span> <span class="n">the</span> <span class="n">image</span> <span class="n">brain</span><span class="o">.</span><span class="n">nii</span> <span class="n">using</span> <span class="n">an</span> <span class="n">anisotropic</span> <span class="n">diffusion</span> <span class="nb">filter</span><span class="o">.</span>
 
-CONTACT
-    SBIA Group &lt;sbia-software at uphs.upenn.edu&gt;
+<span class="n">CONTACT</span>
+    <span class="n">SBIA</span> <span class="n">Group</span> <span class="o">&lt;</span><span class="n">sbia</span><span class="o">-</span><span class="n">software</span> <span class="n">at</span> <span class="n">uphs</span><span class="o">.</span><span class="n">upenn</span><span class="o">.</span><span class="n">edu</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>The <tt class="docutils literal"><span class="pre">--helpshort</span></tt> output contains the synopsis of the full help only:</p>
-<div class="highlight-python"><div class="highlight"><pre>smoothimage [--std &lt;float&gt;] [--radius &lt;rx&gt; &lt;ry&gt; &lt;rz&gt;] [--verbose|-v]
-            {--gaussian|--anisotropic} &lt;image&gt;
-smoothimage [--help|-h|--helpshort|--helpxml|--helpman|--version]
+<p>The <code class="docutils literal"><span class="pre">--helpshort</span></code> output contains the synopsis of the full help only:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">smoothimage</span> <span class="p">[</span><span class="o">--</span><span class="n">std</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">radius</span> <span class="o">&lt;</span><span class="n">rx</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">ry</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">rz</span><span class="o">&gt;</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">verbose</span><span class="o">|-</span><span class="n">v</span><span class="p">]</span>
+            <span class="p">{</span><span class="o">--</span><span class="n">gaussian</span><span class="o">|--</span><span class="n">anisotropic</span><span class="p">}</span> <span class="o">&lt;</span><span class="n">image</span><span class="o">&gt;</span>
+<span class="n">smoothimage</span> <span class="p">[</span><span class="o">--</span><span class="n">help</span><span class="o">|-</span><span class="n">h</span><span class="o">|--</span><span class="n">helpshort</span><span class="o">|--</span><span class="n">helpxml</span><span class="o">|--</span><span class="n">helpman</span><span class="o">|--</span><span class="n">version</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -319,7 +319,7 @@ smoothimage [--help|-h|--helpshort|--helpxml|--helpman|--version]
 <li class="toctree-l2"><a class="reference internal" href="../modules.html">Project Modularization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../scripttargets.html">Build of Script Targets</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../cmdline.html">Command-line Parsing</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">C++</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">C++</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bash.html">Bash</a></li>
 </ul>
 </li>
@@ -349,7 +349,7 @@ smoothimage [--help|-h|--helpshort|--helpxml|--helpman|--version]
     </div>
   <div class="footer">
     &copy; Copyright 2011-12 University of Pennsylvania, 2013-14 Carnegie Mellon University, 2013-16 Andreas Schuh.
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
   </div>
   
   </body>

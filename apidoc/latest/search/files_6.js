@@ -18,7 +18,6 @@ var searchData=
   ['findmirtk_2ecmake',['FindMIRTK.cmake',['../FindMIRTK_8cmake.html',1,'']]],
   ['findmosek_2ecmake',['FindMOSEK.cmake',['../FindMOSEK_8cmake.html',1,'']]],
   ['findnifticlib_2ecmake',['FindNiftiCLib.cmake',['../FindNiftiCLib_8cmake.html',1,'']]],
-  ['findopencv_2ecmake',['FindOpenCV.cmake',['../FindOpenCV_8cmake.html',1,'']]],
   ['findperl_2ecmake',['FindPerl.cmake',['../FindPerl_8cmake.html',1,'']]],
   ['findperllibs_2ecmake',['FindPerlLibs.cmake',['../FindPerlLibs_8cmake.html',1,'']]],
   ['findpython_2ecmake',['FindPython.cmake',['../FindPython_8cmake.html',1,'']]],

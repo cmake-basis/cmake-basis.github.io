@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     'v3.3 (dd0a896)',
+        VERSION:     'v3.3 (fb18c98)',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -158,21 +158,21 @@ needed if you want to regenerate these from the LaTeX sources
 </tr>
 <tr class="row-even"><td><a class="reference external" href="http://www.itk.org/">ITK</a></td>
 <td>3.14</td>
-<td>The standalone <tt class="docutils literal"><span class="pre">basistest-driver</span></tt> executable currently
+<td>The standalone <code class="docutils literal"><span class="pre">basistest-driver</span></code> executable currently
 makes use of the ITK, either version 3 or 4 and above,
 for the comparison of a test image to one or more
 baseline images. If no installation of this library is
 found, this executable is excluded from the build and
 installation. Note that many packages developed at SBIA
 make use of this executable in their tests. If BASIS has
-been built without the <tt class="docutils literal"><span class="pre">basistest-driver</span></tt>, these
-packages have to be build with the <tt class="docutils literal"><span class="pre">BUILD_TESTING</span></tt>
-option set to <tt class="docutils literal"><span class="pre">OFF</span></tt> (the default).</td>
+been built without the <code class="docutils literal"><span class="pre">basistest-driver</span></code>, these
+packages have to be build with the <code class="docutils literal"><span class="pre">BUILD_TESTING</span></code>
+option set to <code class="docutils literal"><span class="pre">OFF</span></code> (the default).</td>
 </tr>
 <tr class="row-odd"><td><a class="reference external" href="http://www.mathworks.com/products/matlab/">MATLAB</a></td>
 <td>R2009b</td>
 <td>The MATLAB tools are used by BASIS to build <a class="reference external" href="http://www.mathworks.com/help/techdoc/matlab_external/f7667.html">MEX-Files</a>
-from C++ sources. If <tt class="docutils literal"><span class="pre">BUILD_TESTING</span></tt> is set to <tt class="docutils literal"><span class="pre">ON</span></tt>
+from C++ sources. If <code class="docutils literal"><span class="pre">BUILD_TESTING</span></code> is set to <code class="docutils literal"><span class="pre">ON</span></code>
 and the <a class="reference external" href="http://www.mathworks.com/help/techdoc/ref/mex.html">MEX</a> script is found, the tests for the build of
 MEX files are run. Otherwise, these are excluded from
 the test.</td>
@@ -181,7 +181,7 @@ the test.</td>
 <td>R2009b</td>
 <td>The MATLAB Compiler (MCC) is used by BASIS to build
 stand-alone executables from MATLAB source files.
-If <tt class="docutils literal"><span class="pre">BUILD_TESTING</span></tt> is set to <tt class="docutils literal"><span class="pre">ON</span></tt> and MCC is found,
+If <code class="docutils literal"><span class="pre">BUILD_TESTING</span></code> is set to <code class="docutils literal"><span class="pre">ON</span></code> and MCC is found,
 the tests for the build of such binaries are run.
 Otherwise, these are excluded from the test.</td>
 </tr>
@@ -206,10 +206,10 @@ Otherwise, these are excluded from the test.</td>
 summarized by the following sequence of commands executed in a shell,
 where $package and $version are shell variables which represent the name
 of this package and the obtained version of the software.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>tar xzf cmake-basis-<span class="nv">$version</span>.tar.gz
-<span class="nv">$ </span><span class="nb">cd </span>cmake-basis-<span class="nv">$version</span>
-<span class="nv">$ </span>mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd </span>build
-<span class="nv">$ </span>ccmake ..
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ tar xzf cmake-basis-<span class="nv">$version</span>.tar.gz
+$ <span class="nb">cd</span> cmake-basis-<span class="nv">$version</span>
+$ mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
+$ ccmake ..
 </pre></div>
 </div>
 <ul class="simple">
@@ -218,31 +218,31 @@ of this package and the obtained version of the software.</p>
 <li>Continue pressing &#8216;c&#8217; until the option &#8216;g&#8217; is available.</li>
 <li>Then press &#8216;g&#8217; to generate the configuration files for GNU Make.</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>make
-<span class="nv">$ </span>make <span class="nb">test</span>    <span class="o">(</span>optional<span class="o">)</span>
-<span class="nv">$ </span>make install <span class="o">(</span>optional<span class="o">)</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ make
+$ make <span class="nb">test</span>    <span class="o">(</span>optional<span class="o">)</span>
+$ make install <span class="o">(</span>optional<span class="o">)</span>
 </pre></div>
 </div>
-<p>Please refer to the detailed <a class="reference internal" href="howto/install.html"><em>Build and Installation How-To Guide</em></a>
+<p>Please refer to the detailed <a class="reference internal" href="howto/install.html"><span class="doc">Build and Installation How-To Guide</span></a>
 which applies to any project developed using BASIS if you are uncertain about above
 steps or have problems to build, test, or install the software on your system.
 If this guide does not help you resolve the issue, please
 <a class="reference external" href="https://github.com/cmake-basis/BASIS/issues">Report the Issue on GitHub</a>.
 In case of failing tests, please attach the output of the following
 command:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>ctest -V &gt;&amp; test.log
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ctest -V &gt;<span class="p">&amp;</span> test.log
 </pre></div>
 </div>
 </div>
 <div class="section" id="cmake-options">
 <span id="basisinstallationoptions"></span><h3>CMake Options<a class="headerlink" href="#cmake-options" title="Permalink to this headline">¶</a></h3>
 <p>In the following, only CMake settings available to configure the build and
-installation of BASIS itself are documented. See <a class="reference internal" href="howto/cmake-options.html"><em>CMake Options</em></a>
+installation of BASIS itself are documented. See <a class="reference internal" href="howto/cmake-options.html"><span class="doc">CMake Options</span></a>
 for detailed information on general CMake Options available for the build
 and installation of any package developed with BASIS.</p>
 <dl class="option">
 <dt id="cmdoption-DDEPENDS_ITK_DIR">
-<tt class="descname">-DDEPENDS_ITK_DIR</tt><tt class="descclassname">:PATH</tt><a class="headerlink" href="#cmdoption-DDEPENDS_ITK_DIR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DDEPENDS_ITK_DIR</code><code class="descclassname">:PATH</code><a class="headerlink" href="#cmdoption-DDEPENDS_ITK_DIR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Specify directory of ITKConfig.cmake file. The ITK library is
 used by the basistest-driver executable if available. See
 Build Dependencies for more details.</p>
@@ -250,7 +250,7 @@ Build Dependencies for more details.</p>
 
 <dl class="option">
 <dt id="cmdoption-DDEPENDS_MATLAB_DIR">
-<tt class="descname">-DDEPENDS_MATLAB_DIR</tt><tt class="descclassname">:PATH</tt><a class="headerlink" href="#cmdoption-DDEPENDS_MATLAB_DIR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DDEPENDS_MATLAB_DIR</code><code class="descclassname">:PATH</code><a class="headerlink" href="#cmdoption-DDEPENDS_MATLAB_DIR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Specify installation root directory of <a class="reference external" href="http://www.mathworks.com/products/matlab/">MATLAB</a>. This variable
 is only available if BUILD_TESTING was set to ON and setting
 it can be omitted. If a MATLAB installation was specified,
@@ -260,15 +260,15 @@ or the <a class="reference external" href="http://www.mathworks.com/help/techdoc
 
 <dl class="option">
 <dt id="cmdoption-DDEFAULT_TEMPLATE">
-<tt class="descname">-DDEFAULT_TEMPLATE</tt><tt class="descclassname">:PATH</tt><a class="headerlink" href="#cmdoption-DDEFAULT_TEMPLATE" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DDEFAULT_TEMPLATE</code><code class="descclassname">:PATH</code><a class="headerlink" href="#cmdoption-DDEFAULT_TEMPLATE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Path to the directory and version of the default mad-libs style text substitution project
 template that will be installed with BASIS. See the
-<a class="reference internal" href="howto/use-and-customize-templates.html"><em>Template Customization How-To</em></a> for details.</p>
+<a class="reference internal" href="howto/use-and-customize-templates.html"><span class="doc">Template Customization How-To</span></a> for details.</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-DINSTALL_TEMPLATE_DIR">
-<tt class="descname">-DINSTALL_TEMPLATE_DIR</tt><tt class="descclassname">:BOOL</tt><a class="headerlink" href="#cmdoption-DINSTALL_TEMPLATE_DIR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DINSTALL_TEMPLATE_DIR</code><code class="descclassname">:BOOL</code><a class="headerlink" href="#cmdoption-DINSTALL_TEMPLATE_DIR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Custom installation directory for project templates.</p>
 </dd></dl>
 
@@ -278,25 +278,25 @@ template that will be installed with BASIS. See the
 the following CMake options are available:</p>
 <dl class="option">
 <dt id="cmdoption-DWITH_ITK">
-<tt class="descname">-DWITH_ITK</tt><tt class="descclassname">:BOOLEAN</tt><a class="headerlink" href="#cmdoption-DWITH_ITK" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DWITH_ITK</code><code class="descclassname">:BOOLEAN</code><a class="headerlink" href="#cmdoption-DWITH_ITK" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether to link the standalone test driver with ITK.</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-DWITH_Python">
-<tt class="descname">-DWITH_Python</tt><tt class="descclassname">:BOOLEAN</tt><a class="headerlink" href="#cmdoption-DWITH_Python" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DWITH_Python</code><code class="descclassname">:BOOLEAN</code><a class="headerlink" href="#cmdoption-DWITH_Python" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether to build/enable the Python utilities.</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-DWITH_Perl">
-<tt class="descname">-DWITH_Perl</tt><tt class="descclassname">:BOOLEAN</tt><a class="headerlink" href="#cmdoption-DWITH_Perl" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DWITH_Perl</code><code class="descclassname">:BOOLEAN</code><a class="headerlink" href="#cmdoption-DWITH_Perl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether to build/enable the Perl utilities.</p>
 </dd></dl>
 
 <dl class="option">
 <dt id="cmdoption-DWITH_BASH">
-<tt class="descname">-DWITH_BASH</tt><tt class="descclassname">:BOOLEAN</tt><a class="headerlink" href="#cmdoption-DWITH_BASH" title="Permalink to this definition">¶</a></dt>
+<code class="descname">-DWITH_BASH</code><code class="descclassname">:BOOLEAN</code><a class="headerlink" href="#cmdoption-DWITH_BASH" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether to build/enable the BASH utilities.</p>
 </dd></dl>
 
@@ -306,12 +306,12 @@ the following CMake options are available:</p>
 <div class="section" id="set-up-the-environment">
 <span id="basisenvironmentsetup"></span><h2>Set up the Environment<a class="headerlink" href="#set-up-the-environment" title="Permalink to this headline">¶</a></h2>
 <p>In order to ease the execution of the main executable files, we suggest to
-add the path <tt class="docutils literal"><span class="pre">&lt;prefix&gt;/bin/</span></tt> to the search path for executable files, i.e.,
-the <tt class="docutils literal"><span class="pre">PATH</span></tt> environment variable. This is, however, generally not required.
+add the path <code class="docutils literal"><span class="pre">&lt;prefix&gt;/bin/</span></code> to the search path for executable files, i.e.,
+the <code class="docutils literal"><span class="pre">PATH</span></code> environment variable. This is, however, generally not required.
 It only eases the execution of the command-line tools provided by the software
 package.</p>
-<p>For example, if you use <a class="reference external" href="http://www.gnu.org/software/bash/">Bash</a> add the following line to the <tt class="docutils literal"><span class="pre">~/.bashrc</span></tt> file:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;&lt;prefix&gt;/bin:${PATH}&quot;</span>
+<p>For example, if you use <a class="reference external" href="http://www.gnu.org/software/bash/">Bash</a> add the following line to the <code class="docutils literal"><span class="pre">~/.bashrc</span></code> file:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;&lt;prefix&gt;/bin:</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -319,15 +319,15 @@ package.</p>
 <span id="basisdeinstallation"></span><h2>Deinstallation<a class="headerlink" href="#deinstallation" title="Permalink to this headline">¶</a></h2>
 <p>During the installation, a manifest of all installed files and a CMake
 script which reads in this list in order to remove these files again
-is generated and installed in <tt class="docutils literal"><span class="pre">&lt;prefix&gt;/lib/cmake/basis/</span></tt>.</p>
-<p>The uninstaller is located in <tt class="docutils literal"><span class="pre">&lt;prefix&gt;/bin/</span></tt> and named <tt class="docutils literal"><span class="pre">uninstall-basis</span></tt>.
+is generated and installed in <code class="docutils literal"><span class="pre">&lt;prefix&gt;/lib/cmake/basis/</span></code>.</p>
+<p>The uninstaller is located in <code class="docutils literal"><span class="pre">&lt;prefix&gt;/bin/</span></code> and named <code class="docutils literal"><span class="pre">uninstall-basis</span></code>.
 In order to remove all files installed by this package as well as the empty
-directories left behind inside the installation root directory given by <tt class="docutils literal"><span class="pre">&lt;prefix&gt;</span></tt>,
+directories left behind inside the installation root directory given by <code class="docutils literal"><span class="pre">&lt;prefix&gt;</span></code>,
 run the command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>uninstall-basis
+<div class="highlight-bash"><div class="highlight"><pre><span></span>uninstall-basis
 </pre></div>
 </div>
-<p>assuming that you added <tt class="docutils literal"><span class="pre">&lt;prefix&gt;/bin/</span></tt> to your <span class="target" id="index-0"></span><a class="reference internal" href="howto/install.html#envvar-PATH"><tt class="xref std std-envvar docutils literal"><span class="pre">PATH</span></tt></a> environment variable.</p>
+<p>assuming that you added <code class="docutils literal"><span class="pre">&lt;prefix&gt;/bin/</span></code> to your <span class="target" id="index-0"></span><a class="reference internal" href="howto/install.html#envvar-PATH"><code class="xref std std-envvar docutils literal"><span class="pre">PATH</span></code></a> environment variable.</p>
 </div>
 </div>
 
@@ -366,7 +366,7 @@ run the command:</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="download.html">Download</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Installation</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#required-packages">Required Packages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#optional-packages">Optional Packages</a></li>
@@ -396,7 +396,7 @@ run the command:</p>
     </div>
   <div class="footer">
     &copy; Copyright 2011-12 University of Pennsylvania, 2013-14 Carnegie Mellon University, 2013-16 Andreas Schuh.
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
   </div>
   
   </body>

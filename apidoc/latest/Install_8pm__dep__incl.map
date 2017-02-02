@@ -1,9 +1,0 @@
-<map id="Install.pm" name="Install.pm">
-<area shape="rect" id="node2" href="$OptList_8pm.html" title="OptList.pm" alt="" coords="103,81,189,107"/>
-<area shape="rect" id="node3" href="$Exporter_8pm.html" title="Exporter.pm" alt="" coords="152,155,245,182"/>
-<area shape="rect" id="node4" href="$Which_8pm.html" title="Which.pm" alt="" coords="5,230,85,257"/>
-<area shape="rect" id="node5" href="$Utilities_8pm.html" title="Main module of project&#45;independent BASIS utilities. " alt="" coords="73,305,161,331"/>
-<area shape="rect" id="node6" href="$Basis_8pm.html" title="BASIS utilities of BASIS package. " alt="" coords="119,379,195,406"/>
-<area shape="rect" id="node7" href="$Readonly_8pm.html" title="Readonly.pm" alt="" coords="236,230,335,257"/>
-<area shape="rect" id="node8" href="$DoxyFilter_8pm.html" title="Base class for Doxygen filter implementations. " alt="" coords="383,230,487,257"/>
-</map>
